@@ -78,7 +78,7 @@ public class APIStepDefs {
     @Then("following fields should not be null")
     public void following_fields_should_not_be_null(List<String> fields) {
         for (String field : fields) {
-            Assert.assertNotNull("Expected '" + field + "' to be not null, but it was null",jp.get(field));
+            Assert.assertNotNull("Expected '" + field + "' is null",jp.get(field));
         }
 
     }
